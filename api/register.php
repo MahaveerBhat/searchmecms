@@ -4,7 +4,7 @@ header('Content-Type: application/json');
 
 $headers = apache_request_headers();
 
-if (isset($headers['X-THM-API-Key']) && $headers['X-THM-API-Key'] === 'TBA') {
+if (isset($headers['X-THM-API-Key']) && $headers['X-THM-API-Key'] === 'n100rjcanuahfoblc7tp8n856c') {
     $input = json_decode(file_get_contents('php://input'), true);
 
     $stmt = $mysqli->prepare("INSERT INTO users (username, password, email, name) VALUES (?, ?, ?, ?)");
